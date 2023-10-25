@@ -392,7 +392,7 @@ impl Display {
         window: Window,
         gl_context: NotCurrentContext,
         config: &UiConfig,
-        tabbed: bool,
+        #[allow(unused)] tabbed: bool,
     ) -> Result<Display, Error> {
         let raw_window_handle = window.raw_window_handle();
 
